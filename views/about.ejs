@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+    <% include ../partials/header.ejs %>
     <h1>This is about me!</h1>
     <p>These are a few of my favourite things:</p>
     <ul>
@@ -14,5 +15,7 @@
         <li><%= elem %></li>
     <% }) %>
     </ul>
+
+    <% include ../partials/footer.ejs %>
 </body>
 </html>

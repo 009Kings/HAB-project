@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+    <% include ../partials/header.ejs %>
     <h1>Hello <%= name %></h1>
     <% var dogAge = age*7 %>
     <h2>You are <%= dogAge %> years old in dog years</h2>
@@ -17,6 +18,7 @@
         <% status = `old` %>
     <% } %>
     <h3>This means you are <%= status %></h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus tempora, fugit veniam corrupti vel quae adipisci, optio consectetur voluptate fuga voluptatibus. Perspiciatis laboriosam exercitationem quia fugit qui? Laudantium, quos reprehenderit?</p>
+
+    <% include ../partials/footer.ejs %>
 </body>
 </html>
