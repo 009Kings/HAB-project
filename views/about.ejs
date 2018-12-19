@@ -8,6 +8,11 @@
 </head>
 <body>
     <h1>This is about me!</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus tempora, fugit veniam corrupti vel quae adipisci, optio consectetur voluptate fuga voluptatibus. Perspiciatis laboriosam exercitationem quia fugit qui? Laudantium, quos reprehenderit?</p>
+    <p>These are a few of my favourite things:</p>
+    <ul>
+    <% favouriteThings.forEach(function(elem){ %>
+        <li><%= elem %></li>
+    <% }) %>
+    </ul>
 </body>
 </html>

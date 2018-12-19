@@ -7,7 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <h1>It's a webpage!</h1>
+    <h1>Hello <%= name %></h1>
+    <% var dogAge = age*7 %>
+    <h2>You are <%= dogAge %> years old in dog years</h2>
+    <% var status %>
+    <% if(dogAge<100){ %>
+        <% status = `young` %>
+    <% } else { %>
+        <% status = `old` %>
+    <% } %>
+    <h3>This means you are <%= status %></h3>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus tempora, fugit veniam corrupti vel quae adipisci, optio consectetur voluptate fuga voluptatibus. Perspiciatis laboriosam exercitationem quia fugit qui? Laudantium, quos reprehenderit?</p>
 </body>
 </html>
